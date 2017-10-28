@@ -5,7 +5,7 @@
     app.controller("MainController", function MainController($state, AuthService) {
 
         var mainCtrl = this;
-        mainCtrl.user; 
+        mainCtrl.user;
         mainCtrl.loginPic = "./img/icons/enter.svg";
 
         mainCtrl.search = function search() {
@@ -29,7 +29,14 @@
         };
 
         mainCtrl.logout = () => {
-
+            return AuthService.signOut().then(
+                function success(response) {
+                    mainCtrl.user = response;
+                    //todo, toast dizendo q saiu. 
+                }, function error(response) {
+                    //todo
+                }
+            )
         };
 
     });

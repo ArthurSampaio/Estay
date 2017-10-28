@@ -5,15 +5,23 @@
             <div class="md-toolbar-tools toolbar-class" layout="row">
 
                 <md-button class="md-icon-button" aria-label="Settings">
-                    <md-icon md-svg-icon="./img/icons/login.svg"></md-icon>
+                    <!--<md-icon md-svg-icon="./img/icons/login.svg"></md-icon>-->
                 </md-button>
 
                 <div class="title" flex>
                     <h2 ng-click="mainCtrl.goToMain()">Estay - HostFamily Social</h2>
                 </div>
-                <md-button ng-click="mainCtrl.login()" class="md-icon-button" aria-label="Search">
-                    <md-icon md-svg-icon="./img/icons/enter.svg"></md-icon>
-                </md-button>
+
+                <!--<md-button ng-click="mainCtrl.login()" class="md-icon-button" aria-label="Search">
+                    <md-icon md-svg-icon="./img/icons/login.svg"></md-icon>
+                </md-button>-->
+
+                <st-auth user="mainCtrl.user" 
+                        sign-in="mainCtrl.login()" 
+                        sign-out="mainCtrl.logout()">
+
+                </st-auth>
+
             </div>
         </md-toolbar>
     </header>

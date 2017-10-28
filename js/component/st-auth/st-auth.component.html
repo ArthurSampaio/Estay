@@ -1,0 +1,20 @@
+<div class="md-dense" flex>
+
+    <div ng-if="authCtrl.user === undefined">
+        <md-button ng-click="authCtrl.login()" title="Realize o login" class="md-icon-button">
+            <md-icon md-svg-icon="./img/icons/login.svg"></md-icon>
+        </md-button>
+    </div>
+    <md-list-item ng-if="authCtrl.user !== undefined">
+        <md-menu>
+            <img  ng-click="$mdMenu.open()" ng-src="{{authCtrl.user.photo}}" class="md-avatar">
+            <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
+                <md-menu-item>
+                    <md-button ng-click="authCtrl.logout()">
+                        Logout
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+    </md-list-item>
+</div>

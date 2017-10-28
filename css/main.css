@@ -69,3 +69,7 @@ footer {
     color: black;
     background-color: #FFFFFF;
 }
+
+cb-auth md-menu {
+    max-width: 3%; 
+}
