@@ -11,19 +11,19 @@
     ]);
 
     // Initialize Firebase
-    const config = {
+    var config = {
         apiKey: "AIzaSyAPZBvr0-kpY8Xu85LsnbBfIM-x36JAef4",
         authDomain: "estay-home.firebaseapp.com",
         databaseURL: "https://estay-home.firebaseio.com",
         projectId: "estay-home",
-        storageBucket: "",
+        storageBucket: "estay-home.appspot.com",
         messagingSenderId: "67063814159"
     };
     firebase.initializeApp(config);
 
     app.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/home');
         $locationProvider.html5Mode(false);
         $locationProvider.hashPrefix('');
 
@@ -36,6 +36,15 @@
                     }
                 }
 
+            })
+            .state("estay.home", {
+                url: '/home',
+                views: {
+                    content: {
+                        templateUrl: 'view/home.html',
+                        controller: 'HomeController as homeCtrl'
+                    }
+                }
             })
 
 

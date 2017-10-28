@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+
+html,
+body {
+    background-color: #FFFCF7;
+    min-height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.toolbar-class {
+    background-color: #FFFFFF;
+    color: black
+}
+
+
+.content {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.card-footer {
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    padding: 1% 0;
+
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;            
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+    height: 100%;
+    min-height: 600px;
+}
+
+.title {
+    text-align: center;
+}
+
+
+header {
+    top:0; 
+    flex: 0 0 auto; 
+    font-family: 'Oswald', 'sans-serif';
+}
+
+header h2 {
+    font-size: 1000px;
+}
+
+footer {
+    bottom: 0;
+    font-family: 'Oswald', 'sans-serif';
+    color: black;
+    background-color: #FFFFFF;
+}

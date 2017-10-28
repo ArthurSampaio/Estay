@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "estay-home",
+    "estay-home": "estay-home"
+  }
+}

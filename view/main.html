@@ -1,0 +1,34 @@
+<section layout="column" class="wrapper">
+
+    <header>
+        <md-toolbar class="header">
+            <div class="md-toolbar-tools toolbar-class" layout="row">
+
+                <md-button class="md-icon-button" aria-label="Settings">
+                    <md-icon md-svg-icon="./img/icons/cbd-logo.svg"></md-icon>
+                </md-button>
+
+                <div class="title" flex>
+                    <h2 ng-click="mainCtrl.goToMain()">Estay - HostFamily Social</h2>
+                </div>
+
+                <md-button ng-click="mainCtrl.search()" class="md-icon-button" aria-label="Search">
+                    <md-icon md-svg-icon="./img/icons/search.svg"></md-icon>
+                </md-button>
+
+                <cb-auth user="mainCtrl.user" sign-in="mainCtrl.login()" sign-out="mainCtrl.logout()"></cb-auth>
+
+            </div>
+        </md-toolbar>
+    </header>
+
+    <md-content>
+        <!--Main content-->
+        <main class="main">
+            <div flex ui-view="content"></div>
+        </main>
+        <footer>
+            <small>Estay - Sua casa fora de Casa.</small>
+        </footer>
+    </md-content>
+</section>
