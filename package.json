@@ -1,0 +1,31 @@
+{
+  "name": "estay",
+  "version": "1.0.0",
+  "description": "Sua casa fora de casa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "host",
+    "family",
+    "familia",
+    "social"
+  ],
+  "author": "Arthur Sampaio",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-aria": "^1.6.6",
+    "angular-material": "^1.1.5",
+    "angular-material-icons": "^0.7.1",
+    "angular-messages": "^1.6.6",
+    "angular-sanitize": "^1.6.6",
+    "angular-ui-router": "^1.0.3",
+    "firebase-tools": "^3.12.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "material-icons": "^0.1.0"
+  }
+}
