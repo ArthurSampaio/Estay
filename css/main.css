@@ -1,11 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
 
 
 html,
 body {
-    background-color: #FFFCF7;
+    background-color: #FFFFFF;
     min-height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -15,16 +17,34 @@ body {
     color: black
 }
 
+.welcome-info{
+    font-family: 'Ruda', serif;
+    margin-top: 10%;
+    margin-left:15%;
+    padding: 1%;
+   
+}
+
+.welcome-info .text-info {
+    margin-right: 25%;
+    font-size: 38px;
+     line-height: 1.5;
+     text-shadow:  #aaa;
+}
 
 .content {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     margin-top: 2%;
     width: 100%;
     background-color: transparent;
+}
+
+md-content {
+    background-color: #FFFFFF;
 }
 
 .card-footer {
@@ -49,7 +69,7 @@ body {
 }
 
 .title {
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -57,10 +77,6 @@ header {
     top:0; 
     flex: 0 0 auto; 
     font-family: 'Oswald', 'sans-serif';
-}
-
-header h2 {
-    font-size: 1000px;
 }
 
 footer {

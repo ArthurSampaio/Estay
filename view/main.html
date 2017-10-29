@@ -15,10 +15,12 @@
                 <!--<md-button ng-click="mainCtrl.login()" class="md-icon-button" aria-label="Search">
                     <md-icon md-svg-icon="./img/icons/login.svg"></md-icon>
                 </md-button>-->
+                <span flex></span>
+                <md-button class="md-warn md-hue-2">Torne-se um Host</md-button>
+                <md-button class="md-warn md-hue-2">Ajuda</md-button>
 
-                <st-auth user="mainCtrl.user" 
-                        sign-in="mainCtrl.login()" 
-                        sign-out="mainCtrl.logout()">
+
+                <st-auth user="mainCtrl.user" sign-in="mainCtrl.login()" sign-out="mainCtrl.logout()">
 
                 </st-auth>
 
