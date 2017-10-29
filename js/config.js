@@ -7,7 +7,8 @@
         'ngAria',
         'ngSanitize',
         'ngMaterial',
-        'ui.router'
+        'ui.router',
+        'jkAngularCarousel'
     ]);
 
     // Initialize Firebase
@@ -60,9 +61,20 @@
                     })
                 }
             })
+
+            .state("estay.about", {
+                url: '/about',
+                views: {
+                    content: {
+                        templateUrl: 'view/about.html'
+                    }
+                }
+            })
     });
 
     app.run(['$rootScope', '$state', function ($rootScope, $state) {
+
+        console.log(roomsAux);
 
         $state.defaultErrorHandler(function (error) {
             console.log(error);

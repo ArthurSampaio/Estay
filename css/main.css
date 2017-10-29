@@ -25,6 +25,25 @@ body {
    
 }
 
+.rooms-city h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+.room-list {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.room-list h1 {
+    font-size: 20px;
+}
+
+.md-avatar {
+    height: 100px;
+}
+
 .welcome-info .text-info {
     margin-right: 25%;
     font-size: 38px;

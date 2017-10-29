@@ -1,6 +1,27 @@
-{{cityCtrl.city}}
-AAAAAAAAA
-BBBBBBB
-<h2>AAAAAAA
-    aaaaaaaaaaa
-</h2>
+<section class="rooms-city" layout="column">
+    <md-divider></md-divider>
+    <h1>{{ cityCtrl.city.name }}</h1>
+    <md-divider></md-divider>
+</section>
+
+<section class="room-list">
+
+    <md-content>
+        <div>
+            <div class="md-padding" layout="row" layout-wrap layout-align="center center">
+                <md-card flex="33" ng-repeat="room in cityCtrl.rooms">
+                    <jk-carousel data="room.photos" current-index="0" item-template-url="'view/item-template.html'" max-width="400" max-height="250">
+                    </jk-carousel>
+                    <md-list-item class="md-4-line">
+                        <h4> {{room.short_description}} - A partir de {{ room.value }} </h4>
+                        <h5> TV - Máquina de Lavar - Básico  </h5>
+                    </md-list-item>
+                </md-card>
+            </div>
+
+        </div>
+
+
+    </md-content>
+
+</section>

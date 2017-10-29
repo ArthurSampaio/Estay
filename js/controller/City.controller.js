@@ -2,12 +2,14 @@
 (function () {
     var app = angular.module('estayApp');
 
-    app.controller("CityController", function CityController($state, city) {
+    app.controller("CityController", function CityController($state, city, HelperService) {
 
         var cityCtrl = this;
-        cityCtrl.city = city; 
-        console.log(city);
-        
-
+        HelperService.getInfoForCity(city).then(
+            function (response){
+                cityCtrl.city = response;
+                cityCtrl.rooms = cityCtrl.city.id === "campinagrande-pb" ? roomsAux.rooms : [];
+            }
+        );
     });
 })();
