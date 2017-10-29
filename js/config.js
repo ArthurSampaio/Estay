@@ -46,6 +46,20 @@
                     }
                 }
             })
+            .state("estay.city", {
+                url: '/cidade/:id',
+                views: {
+                    content: {
+                        templateUrl: 'view/city.html',
+                        controller: 'CityController as cityCtrl'
+                    }
+                },
+                resolve: {
+                    city: (($stateParams) => {
+                        return $stateParams.id;
+                    })
+                }
+            })
     });
 
     app.run(['$rootScope', '$state', function ($rootScope, $state) {

@@ -1,24 +1,23 @@
 <md-content>
-    
+
     <section class="welcome-info">
         <div class="text-info">
-            <h1>Realize seu sonho de estudar na cidade que 
-            você escolheu com a experiência de uma nova família. Sua casa fora de casa. </h1>
+            <h1>Realize seu sonho de estudar na cidade que você escolheu com a experiência de uma nova família. Sua casa fora
+                de casa. </h1>
+            </br>
+            <md-autocomplete md-selected-item="homeCtrl.selectedItem" md-search-text="homeCtrl.searchText" md-items="item in homeCtrl.querySearch(homeCtrl.searchText)"
+                md-item-text="item.name" md-min-length="0" placeholder="Onde está seu futuro?">
+                <md-item-template>
+                    <div  ng-click="homeCtrl.goToCity(item)">
+                        <span md-highlight-text="homeCtrl.searchText" md-highlight-flags="^i">{{item.name}}</span>
+
+                    </div>
+                </md-item-template>
+                <md-not-found>
+                    Não há cidades brasileiras com este nome.
+                </md-not-found>
+            </md-autocomplete>
         </div>
-         <md-autocomplete
-            md-selected-item="homeCtrl.selectedItem"
-            md-search-text="homeCtrl.searchText"
-            md-items="item in homeCtrl.querySearch(homeCtrl.searchText)"
-            md-item-text="item.name"
-            md-min-length="0"
-            placeholder="Onde está seu futuro?">
-        <md-item-template>
-          <span ng-click="homeCtrl.goToCity(item)" md-highlight-text="homeCtrl.searchText" md-highlight-flags="^i">{{item.name}}</span>
-        </md-item-template>
-        <md-not-found>
-          No states matching "{{homeCtrl.searchText}}" were found.
-          <a ng-click="ctrl.newState(ctrl.searchText)">Create a new one!</a>
-        </md-not-found>
-      </md-autocomplete>
+
     </section>
 </md-content>

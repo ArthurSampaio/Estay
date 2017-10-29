@@ -7,6 +7,7 @@
         var homeCtrl = this;
         homeCtrl.querySearch = querySearch;
         homeCtrl.goToCity = goToCity;
+        const STATE_CITY = "estay.city";
 
         HelperService.loadCities().then(
             function (response) {
@@ -17,6 +18,7 @@
 
         function goToCity(city){
             console.log(city);
+            $state.go(STATE_CITY, {id: city.id});
         }
 
         function querySearch(query) {
