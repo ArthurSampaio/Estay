@@ -6,22 +6,14 @@
                 <md-list-item>
                     <img ng-src="./img/icons/logo.png" class="md-avatar">
                 </md-list-item>
-
-
-
                 <div class="title" flex>
                     <big ng-click="mainCtrl.goToMain()">Estay - HostFamily Social</big>
                 </div>
-
                 <span flex></span>
                 <md-button class="md-warn md-hue-2">Torne-se um Host</md-button>
                 <md-button class="md-warn md-hue-2">Ajuda</md-button>
-
-
                 <st-auth user="mainCtrl.user" sign-in="mainCtrl.login()" sign-out="mainCtrl.logout()">
-
                 </st-auth>
-
             </div>
         </md-toolbar>
     </header>
@@ -29,10 +21,11 @@
     <md-content>
         <!--Main content-->
         <main class="main">
-            <div flex ui-view="content"></div>
+            <!--<div flex ui-view="content"></div>-->
         </main>
         <footer>
             <small>Estay - Sua casa fora de Casa.</small>
         </footer>
     </md-content>
+
 </section>

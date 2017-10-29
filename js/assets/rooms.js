@@ -96,10 +96,11 @@ var roomsAux = {
             id: 6,
             value: 350,
             short_description: "Republica de amigos da UFCG",
-            photos: [{ src: "https://a0.muscache.com/im/pictures/29a77ef6-cade-4df9-a4cc-a73db3b0f836.jpg?aki_policy=x_large" },
+            photos: [{ src: "https://a0.muscache.com/im/pictures/cbe71a99-cbd2-477b-ae9a-3fd56d4da5b5.jpg?aki_policy=x_large" },
+
+            { src: "https://a0.muscache.com/im/pictures/29a77ef6-cade-4df9-a4cc-a73db3b0f836.jpg?aki_policy=x_large" },
             { src: "https://a0.muscache.com/im/pictures/7a0d7ba5-9d1e-496d-b833-863e8bf434a3.jpg?aki_policy=x_large" },
 
-            { src: "https://a0.muscache.com/im/pictures/cbe71a99-cbd2-477b-ae9a-3fd56d4da5b5.jpg?aki_policy=x_large" },
             { src: "https://a0.muscache.com/im/pictures/93f093f6-2117-447c-9652-70cbb37e3163.jpg?aki_policy=x_large" }],
             host: {
                 name: "Ricardo",

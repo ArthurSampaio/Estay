@@ -74,8 +74,6 @@
 
     app.run(['$rootScope', '$state', function ($rootScope, $state) {
 
-        console.log(roomsAux);
-
         $state.defaultErrorHandler(function (error) {
             console.log(error);
         });
